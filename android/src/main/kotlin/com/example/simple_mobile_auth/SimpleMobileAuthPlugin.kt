@@ -50,7 +50,7 @@ class SimpleMobileAuthPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
                 result.success(args.name)
             }
         } else {
-            result.success(BiometricResult.UNAVAILABLE)
+            result.success(BiometricResult.UNAVAILABLE.name)
 
         }
     }
