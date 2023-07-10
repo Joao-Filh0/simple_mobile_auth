@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:simple_mobile_auth/simple_mobile_auth.dart';
 import 'package:simple_mobile_auth/simple_mobile_auth_platform_interface.dart';
-import 'package:simple_mobile_auth/simple_mobile_auth_method_channel.dart';
+import 'package:simple_mobile_auth/src/simple_mobile_auth_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockSimpleMobileAuthPlatform
@@ -20,7 +20,7 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    SimpleMobileAuth simpleMobileAuthPlugin = SimpleMobileAuth();
+    SimpleMobileAuthService simpleMobileAuthPlugin = SimpleMobileAuthService();
     MockSimpleMobileAuthPlatform fakePlatform = MockSimpleMobileAuthPlatform();
     SimpleMobileAuthPlatform.instance = fakePlatform;
 

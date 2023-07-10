@@ -3,8 +3,6 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:simple_mobile_auth/simple_mobile_auth.dart';
-import 'package:simple_mobile_auth/utils/mobile_auth_content.dart';
-import 'package:simple_mobile_auth/utils/mobile_auth_result.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +17,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   MobileResult _mobileResult = MobileResult.unavailable;
-  final _simpleMobileAuthPlugin = SimpleMobileAuth();
+  final _simpleMobileAuthPlugin = SimpleMobileAuthService();
 
   @override
   void initState() {

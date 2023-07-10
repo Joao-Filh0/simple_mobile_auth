@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:simple_mobile_auth/simple_mobile_auth_method_channel.dart';
+import 'package:simple_mobile_auth/src/simple_mobile_auth_method_channel.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
